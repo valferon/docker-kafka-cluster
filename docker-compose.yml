@@ -30,12 +30,12 @@ services:
     build: .
     image: sj_kafka_img
     environment:
-      kafka_port: 9092
+      kafka_port: 9093
       kafka_id: 2
       kafka_ip: 10.8.0.14
     hostname: kafka_2
     ports:
-      - 9093:9092
+      - 9093:9093
     networks:
       - cluster
     links:
@@ -44,12 +44,12 @@ services:
     build: .
     image: sj_kafka_img
     environment:
-      kafka_port: 9092
+      kafka_port: 9094
       kafka_id: 3
       kafka_ip: 10.8.0.14
     hostname: kafka_3
     ports:
-      - 9094:9092
+      - 9094:9094
     networks:
       - cluster
     links:
